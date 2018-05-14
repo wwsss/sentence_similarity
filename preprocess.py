@@ -20,21 +20,14 @@ with open(r"坐席与客户.csv", 'r',encoding='utf-8') as f:
         except:
             print(linenumber)
             linenumber += 1
-            '''
-            if linenumber == pre_linenumber:
-                break
-            else:
-                print(linenumber)
-                pre_linenumber = linenumber
-            '''
+
 print(linenumber)
 print(num)
-'''
+
 dialogue_content_df = pd.DataFrame(dialogue_content)
 dialogue_content_df.to_csv('/dev/shm/dialogue.csv',index=False)
 costum_content = dialogue_content_df[dialogue_content_df['id']=='客户']
 costum_content.to_csv('/dev/shm/costum.csv',index=False)
 helper_content = dialogue_content_df[dialogue_content_df['id']=='坐席']
 helper_content.to_csv('/dev/shm/helper.csv',index=False)
-#print(pd.read_csv('坐席与客户.csv',encoding='ISO-8859-1', skiprows=[3869755,3869771]))
-'''
+
