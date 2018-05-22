@@ -1,7 +1,7 @@
 #-*-coding:utf-8-*-
-
 import pandas as pd
 import csv
+
 with open(r"坐席与客户.csv", 'r',encoding='utf-8') as f:
     reader = csv.reader(f)
     linenumber = 1
